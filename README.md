@@ -15,7 +15,7 @@ git clone --depth=1 https://github.com/yunzaijs/bot.git
 ```
 
 ```sh
-cd yunzai-bot
+cd bot
 ```
 
 ```sh
