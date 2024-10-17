@@ -1,6 +1,6 @@
-# YZ-NEXT-PE
+# BOT PE
 
-Yunzai-Bot Next PE 是 Next 库的纯净版
+BOT PE 是兼容V3环境和喵崽环境的纯净版
 
 [☞点击阅读文档了解更多](https://yunzai-org.github.io/docs/)
 
@@ -38,7 +38,7 @@ yarn app
 
 > 当前仅有喵崽环境支持几乎所有的米游类插件
 
-> 需要此环境的友友务必执行补丁脚本
+> 需要此环境的友友务必执行补丁脚本并安装原神和喵喵插件
 
 - 执行补丁
 
@@ -46,13 +46,13 @@ yarn app
 node lib/miao-yunzai.js
 ```
 
-- 安装原神插件
+- 安装喵喵插件
 
 ```sh
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
 ```
 
-- 安装喵喵插件
+- 安装原神插件
 
 ```sh
 git clone --depth=1 https://github.com/yunzaijs/genshin.git ./plugins/genshin/
