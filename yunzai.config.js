@@ -1,5 +1,5 @@
-import { defineConfig } from 'yunzai'
+import { defineConfig } from 'yunzaijs'
 export default defineConfig({
-  applications: ['yz-system'],
-  middlewares: ['yunzai-mys/runtime', 'yunzai-mys/message']
+  applications: ['@yunzaijs/system'],
+  middlewares: ['@yunzaijs/mys/runtime', '@yunzaijs/mys/message']
 })

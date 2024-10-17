@@ -4,14 +4,14 @@ Yunzai-Bot Next PE 是 Next 库的纯净版
 
 [☞点击阅读文档了解更多](https://yunzai-org.github.io/docs/)
 
-> Code https://github.com/yunzai-org/yunzai-next
+> Code https://github.com/yunzaijs/core
 
 ## 安装
 
 必备条件`Chrome`、`Node.js@18`、`Git`、`Redis-6.2`
 
 ```sh
-git clone --depth=1 https://github.com/yunzai-org/yunzai-bot.git
+git clone --depth=1 https://github.com/yunzaijs/bot.git
 ```
 
 ```sh
@@ -34,86 +34,32 @@ yarn --ignore-engines
 yarn app
 ```
 
-## 自建
+## 喵崽
 
-自建版本无v3环境
+> 当前仅有喵崽环境支持几乎所有的米游类插件
 
-```sh
-npm init
-```
+> 需要此环境的友友务必执行补丁脚本
 
-> 输入版本时，需要标记4.1.0,其他随意
-
-- 依赖
+- 执行补丁
 
 ```sh
-npm install yarn@1.19.1 -g
-yarn add yunzai react-puppeteer react puppeteer yz-system -W
+node lib/miao-yunzai.js
 ```
 
-- src/main.js
-
-```js
-import { createLogin, Client, Processor, Loader } from 'yunzai'
-const initialize = () => {
-  Processor.install()
-  Loader.load()
-}
-const start = async () => {
-  await createLogin()
-  const T = await Client.run()
-  if (T) {
-    Bot.on('system.online', initialize)
-  } else {
-    initialize()
-  }
-}
-setTimeout(start, 0)
-```
-
-- yunzai.config.js
-
-```js
-import { defineConfig } from 'yunzai'
-export default defineConfig({
-  applications: ['yz-system']
-})
-```
-
-- .puppeteerrc.cjs
-
-```js
-/**
- * @type {import("puppeteer").Configuration}
- */
-module.exports = require('react-puppeteer/.puppeteerrc')
-```
-
-- 运行
+- 安装原神插件
 
 ```sh
-node src/main.js
+git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
 ```
+
+- 安装喵喵插件
 
 ```sh
-node src/main.js --relogin
+git clone --depth=1 https://github.com/yunzaijs/genshin.git ./plugins/genshin/
 ```
 
-- 后台运行
+- 去除环境
 
 ```sh
-yarn add pm2 -W
-```
-
-- pm2.config.cjs
-
-```js
-/**
- * @type {{ apps: import("pm2").StartOptions[] }}
- */
-module.exports = require('yunzai/pm2')
-```
-
-```sh
-npx pm2 startOrRestart pm2.config.cjs
+node lib/miao-yunzai.js --delete
 ```

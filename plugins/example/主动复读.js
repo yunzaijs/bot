@@ -1,4 +1,4 @@
-import { Plugin } from 'yunzai'
+import { Plugin } from 'yunzaijs'
 export class example2 extends Plugin {
   constructor() {
     super({

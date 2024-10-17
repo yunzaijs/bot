@@ -1,5 +1,5 @@
-import { ConfigController as cfg } from 'yunzai'
-import { Plugin } from 'yunzai'
+import { ConfigController as cfg } from 'yunzaijs'
+import { Plugin } from 'yunzaijs'
 
 /**
  * 对私聊禁用做处理当开启私聊禁用时只接收cookie以及抽卡链接

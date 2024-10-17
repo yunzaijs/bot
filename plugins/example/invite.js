@@ -1,5 +1,5 @@
-import { Bot, ConfigController as cfg } from 'yunzai'
-import { Plugin } from 'yunzai'
+import { Bot, ConfigController as cfg } from 'yunzaijs'
+import { Plugin } from 'yunzaijs'
 
 /**
  * *****

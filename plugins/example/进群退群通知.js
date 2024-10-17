@@ -1,4 +1,4 @@
-import { Plugin } from 'yunzai'
+import { Plugin } from 'yunzaijs'
 
 const tips = '退群了'
 

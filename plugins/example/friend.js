@@ -1,5 +1,5 @@
-import { ConfigController as cfg } from 'yunzai'
-import { Plugin } from 'yunzai'
+import { ConfigController as cfg } from 'yunzaijs'
+import { Plugin } from 'yunzaijs'
 import { promisify } from 'util'
 const sleep = promisify(setTimeout)
 

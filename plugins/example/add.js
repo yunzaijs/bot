@@ -1,12 +1,12 @@
-import { ConfigController as cfg } from 'yunzai'
-import { Plugin } from 'yunzai'
+import { ConfigController as cfg } from 'yunzaijs'
+import { Plugin } from 'yunzaijs'
 import fs from 'node:fs'
 import lodash from 'lodash'
 import { pipeline } from 'stream'
 import { promisify } from 'util'
 import fetch from 'node-fetch'
 import moment from 'moment'
-import { makeForwardMsg } from 'yunzai'
+import { makeForwardMsg } from 'yunzaijs'
 
 let textArr = {}
 

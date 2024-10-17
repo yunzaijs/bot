@@ -1,5 +1,5 @@
 import { exec } from 'child_process'
-import { Plugin } from 'yunzai'
+import { Plugin } from 'yunzaijs'
 
 const getCommandOutput = command => {
   return new Promise((resolve, reject) => {
