@@ -11,11 +11,11 @@ BOT PE 是兼容V3环境和喵崽环境的纯净版
 必备条件`Chrome`、`Node.js@18`、`Git`、`Redis-6.2`
 
 ```sh
-git clone --depth=1 https://github.com/yunzaijs/bot.git
+git clone --depth=1 https://github.com/yunzaijs/bot.git ./yunzai-bot
 ```
 
 ```sh
-cd bot
+cd yunzai-bot
 ```
 
 ```sh
