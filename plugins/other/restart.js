@@ -1,1 +1,1 @@
-export { Restart } from 'yz-system'
+export { Restart } from '@yunzaijs/system'

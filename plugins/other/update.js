@@ -1,1 +1,1 @@
-export { Update as update } from 'yz-system'
+export { Update as update } from '@yunzaijs/system'

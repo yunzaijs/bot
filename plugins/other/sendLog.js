@@ -1,1 +1,1 @@
-export { SendLog as sendLog } from 'yz-system'
+export { SendLog as sendLog } from '@yunzaijs/system'
