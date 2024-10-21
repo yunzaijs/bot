@@ -3,7 +3,7 @@
  */
 const cfg = require('yunzaijs/pm2')
 const app = cfg.apps[0]
-app.srcipt = 'node lib/main.js'
+app.script = 'node lib/main.js'
 module.exports = {
   apps: [app]
 }
