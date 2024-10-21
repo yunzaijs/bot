@@ -21,7 +21,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@yunzaijs/mys": "^0.0.1",
+    "@yunzaijs/mys": "^0.0.2",
     "@yunzaijs/system": "^0.0.1",
     "icqq": "^0.6.10",
     "image-size": "^1.1.1",
@@ -30,7 +30,7 @@
     "oicq": "^2.3.1",
     "puppeteer": "^22",
     "react-puppeteer": "^1.1.2",
-    "yunzaijs": "^1.0.0-rc.4"
+    "yunzaijs": "^1.0.0-rc.5"
   },
   "devDependencies": {
     "husky": "^9.1.1",
