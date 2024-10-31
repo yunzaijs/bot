@@ -1,0 +1,46 @@
+{
+  "name": "yunzai-pe",
+  "version": "4.1.45",
+  "author": "Le-niao",
+  "description": "Bot",
+  "main": "lib/main.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "app": "node lib/main.js",
+    "login": "node lib/main.js --login",
+    "start": "pm2 startOrRestart pm2.config.cjs",
+    "stop": "pm2 stop pm2.config.cjs",
+    "delete": "pm2 delete pm2.config.cjs",
+    "kill": "pm2 kill",
+    "logs": "pm2 logs",
+    "monit": "pm2 monit",
+    "pm2": "pm2",
+    "format": "prettier --write .",
+    "check-format": "git diff --exit-code",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@yunzaijs/mys": "^0.0.2",
+    "@yunzaijs/system": "^0.0.1",
+    "icqq": "^0.6.10",
+    "image-size": "^1.1.1",
+    "jsxp": "^1.0.4",
+    "lodash": "^4.17.21",
+    "oicq": "^2.3.1",
+    "puppeteer": "^22",
+    "react-puppeteer": "^1.1.2",
+    "yunzaijs": "^1.0.0-rc.5"
+  },
+  "devDependencies": {
+    "husky": "^9.1.1",
+    "prettier": "^3.3.3"
+  },
+  "workspaces": [
+    "plugins/**",
+    "renderers/**"
+  ],
+  "imports": {
+    "#yunzai": "./lib/index.js"
+  }
+}
