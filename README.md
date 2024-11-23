@@ -1,10 +1,10 @@
 # BOT PE
 
-BOT PE 是兼容V3环境和喵崽环境的纯净版
+BOT PE 是兼容V3环境和喵崽环境的yunzaijs机器人纯净版
 
-[☞点击阅读文档了解更多](https://yunzai-org.github.io/docs/)
+[☞点击阅读文档了解更多](https://yunzaijs.com/docs/) [文档镜像](https://yunzaijs.github.io/docs/)
 
-> Code https://github.com/yunzaijs/core
+> 开发框架核心库 https://github.com/yunzaijs/core
 
 ## 安装
 
