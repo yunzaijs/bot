@@ -34,6 +34,14 @@ yarn --ignore-engines
 yarn app
 ```
 
+#Qsign 更新脚本（版本过低/45/237执行以下脚本↓）
+
+- 进入根目录执行
+```sh
+bash <(curl -sSL gitee.com/lzqmql/qsign/raw/master/qsign)
+```
+- 如需enka请访问:https://yzbz.fufuidc.com
+
 ## 喵崽
 
 > 当前仅有喵崽环境支持几乎所有的米游类插件
