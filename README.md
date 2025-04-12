@@ -37,9 +37,11 @@ yarn app
 #Qsign 更新脚本（版本过低/45/237执行以下脚本↓）
 
 - 进入根目录执行
+
 ```sh
 bash <(curl -sSL gitee.com/lzqmql/qsign/raw/master/qsign)
 ```
+
 - 如需enka请访问:https://yzbz.fufuidc.com
 
 ## 喵崽
@@ -63,7 +65,14 @@ git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/m
 - 安装原神插件
 
 ```sh
-git clone --depth=1 -b next https://github.com/yunzaijs/genshin.git ./plugins/genshin/
+# 定义仓库地址
+REPO_URL="https://gitee.com/yunzaijs/genshin.git"
+# 定义目标目录
+TARGET_DIR="./plugins/genshin/"
+# 获取tag最新版
+LATEST_TAG=$(git ls-remote --tags $REPO_URL | awk -F'/' '{print $NF}' | sort -V | tail -n1)
+# 克隆原神插件
+git clone --depth=1 --branch $LATEST_TAG $REPO_URL $TARGET_DIR
 ```
 
 - 去除环境
