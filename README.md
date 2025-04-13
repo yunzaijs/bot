@@ -68,6 +68,11 @@ git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/m
 git clone --depth=1 https://ghfast.top/https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin
 ```
 
+```sh
+# or 加速地址
+git clone --depth=1 https://ghfast.top/https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin
+```
+
 - 安装原神插件
 
 ```sh
