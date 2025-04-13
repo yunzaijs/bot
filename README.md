@@ -60,7 +60,12 @@ node lib/miao-yunzai.js
 
 ```sh
 # 克隆喵喵插件
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugi
+git clone --depth=1 https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugi
+```
+
+```sh
+# or 加速地址
+git clone --depth=1 https://ghfast.top/https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin
 ```
 
 - 安装原神插件
@@ -68,6 +73,8 @@ git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/m
 ```sh
 # 克隆原神插件
 git clone -b deploy --depth=1 https://gitee.com/yunzaijs/genshin.git ./plugins/genshin
+
+
 ```
 
 - 去除环境
