@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "test",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["app", "--skip"],
+      "runtimeExecutable": "yarn",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

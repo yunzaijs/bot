@@ -39,5 +39,8 @@
   "workspaces": [
     "plugins/**",
     "renderers/**"
-  ]
+  ],
+  "imports": {
+    "#yunzai": "./lib/index.js"
+  }
 }
