@@ -11,7 +11,7 @@ BOT PE 是兼容V3环境和喵崽环境的yunzaijs机器人纯净版
 必备条件`Chrome`、`Node.js@18`、`Git`、`Redis-6.2`
 
 ```sh
-git clone --depth=1 https://github.com/yunzaijs/bot.git ./yunzai-bot
+git clone --depth=1 https://gitee.com/yunzaijs/bot.git ./yunzai-bot
 ```
 
 ```sh
@@ -59,20 +59,15 @@ node lib/miao-yunzai.js
 - 安装喵喵插件
 
 ```sh
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+# 克隆喵喵插件
+git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugi
 ```
 
 - 安装原神插件
 
 ```sh
-# 定义仓库地址
-REPO_URL="https://gitee.com/yunzaijs/genshin.git"
-# 定义目标目录
-TARGET_DIR="./plugins/genshin/"
-# 获取tag最新版
-LATEST_TAG=$(git ls-remote --tags $REPO_URL | awk -F'/' '{print $NF}' | sort -V | tail -n1)
 # 克隆原神插件
-git clone --depth=1 --branch $LATEST_TAG $REPO_URL $TARGET_DIR
+git clone -b deploy --depth=1 https://gitee.com/yunzaijs/genshin.git ./plugins/genshin
 ```
 
 - 去除环境
